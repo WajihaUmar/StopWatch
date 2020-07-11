@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height: 100%;
+}
+body { 
+  position: fixed;
+  width:100%;
+  height: 100vh;
+  background-image: url(background.jpg) ;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-attachment: fixed;
+  background-size:  cover;
+}
+.cols {
+  width: 65%;
+  height: 550px;
+}
+.colOne {
+  background: linear-gradient(120deg, #005457,#01a299, #70efde);
+}
+.HeadCap {
+  font-size: 37px;
+}
+.heading {
+  border-bottom: 7px double white;
+  width: 180px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.timer_border {
+  width: 245px;
+  height: 245px;
+  padding-top: 15px;
+  border-radius: 100%;
+  background: linear-gradient(120deg, #005457,#01a299, #70efde);
+}
+.timer {
+  width: 215px;
+  height: 215px;
+  border-radius: 100%;
+  padding-top: 90px;
+  background: linear-gradient(120deg,#70efde,#01a299, #005457);
+}
+.display {
+  display: inline-block;
+  width: 60px;
+  font-size: 30px;
+  font-weight: 500;
+  color: white;
+}
+.colon {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+}
+.btns {
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #005457;
+  border: none;
+}
+
+.hide {
+  display: none;
+} 
+.btns:hover .hide {
+  display: block;
+}
+.btns:hover{
+  width: 90%;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #005457;
+}
+.btns:hover .icon {
+  display: none;
+}
+
+.colTwo {
+  background: linear-gradient(120deg,#70efde,#01a299, #005457);
+  padding-top: 20px;
+}
+.records {
+  width: 90%;
+  height: 510px;
+  background: linear-gradient(120deg,#70efde,#01a299, #005457);
+  border-top: 2px solid #005457;
+  border-left: 2px solid #005457;
+  border-bottom: 2px solid #70efde;
+  border-right: 2px solid #70efde;
+  /* margin-top: 20px; */
+}
+.heading2 {
+  border-bottom: 7px double white;
+  width: 120px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.li-item {
+  color: white;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 500;
+  border-bottom: 1px solid white !important;
+}
+
+@media screen and (max-width: 991px) {
+  .cols {
+    width: 85%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cols {
+    width: 57%;
+    height: 550px;
+  }
+  body { 
+    position: static;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cols {
+    width: 60%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .cols {
+    width: 70%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .cols {
+    width: 80%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cols {
+    width: 90%;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cols {
+    width: 97%;
+    height: 550px;
+  }
+}

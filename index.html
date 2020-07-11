@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./font-awesome-4.7.0 (1)/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0 (1)/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Stop Watch</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row no-gutters pt-5">
+      <div class="col-md-6 col-12 mt-md-0 mt-3 text-center ">
+        <div class="cols colOne mx-auto pt-3">
+          <p class="text-white heading mx-auto"> <span class="HeadCap">S</span>TOP <span class="HeadCap">W</span>ATCH</p>
+          <div class="timer_border mx-auto mt-4">
+            <div class="timer mx-auto">
+              <p class="display text-center" id="min">0</p> <span class="colon">:</span>
+              <p class="display text-center" id="sec">0</p> <span class="colon">:</span>
+              <p class="display text-center" id="msec">0</p>
+            </div>
+          </div>
+          <div class="row no-gutters mt-5 pt-3">
+            <div class="col-3">
+              <button type="button" class="btn btn-dark btns" onclick="start()" id="startBtn">
+                <span class="hide">Start</span> <i class="icon fa fa-play" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-dark btns" onclick="stop()">
+                <span class="hide">Stop</span> <i class="icon fa fa-pause-circle" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-dark btns" onclick="reset()">
+                <span class="hide">Reset</span> <i class="icon fa fa-repeat" aria-hidden="true"></i>
+              </button>
+            </div>
+            <div class="col-3">
+              <button type="button" class="btn btn-dark btns" onclick="record()">
+                <span class="hide">Record</span> <i class="icon fa fa-bookmark" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12 mt-md-0 mt-4 mb-md-0 mb-3">
+        <div class="cols colTwo mx-auto">
+          <div class="records mx-auto px-3">
+            <p class="text-white heading2 mx-auto"> <span class="HeadCap">R</span>ECORDS</p>
+            <ul class="resultList" id="list">
+    
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
